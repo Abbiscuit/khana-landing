@@ -1,5 +1,5 @@
 # KHana's Landing Page
 
-** Stacks **
+**Stack**
 
 - HTML, CSS, Bootstrap4
