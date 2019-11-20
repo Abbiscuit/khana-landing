@@ -14,16 +14,18 @@
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous"
     />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap"
+      rel="stylesheet"
+    />
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/styles.css" />
     <title>khanamonkey</title>
   </head>
   <body>
     <!-- NAVIGATION -->
-    <nav
-      class="navbar navbar-expand-lg navbar-light bg-light fixed-top"
-      id="mainNav"
-    >
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
       <div class="container">
         <a class="navbar-brand" href="#">KHanamonkey</a>
         <button
@@ -74,15 +76,26 @@
     </nav>
 
     <!-- HEADER -->
-    <header class="header-page jumbotron">
-      <div class="container header-page-section">
+    <header class="header-page ">
+      <!-- <div class=" header-page-section">
         <div class="header-text">
           <h1>Medical Cannabis & <br />Information Technology</h1>
-          <p class="lead">次の時代の主流となる医療用大麻の未来</p>
-          <a href="btn btn-sm " href="#company">私たちについて</a>
+          <p class="lead">次世代の主流となる医療用大麻の未来</p>
+          <a class="btn btn-primary" href="#company" role="button"
+            >私たちについて</a
+          >
         </div>
-      </div>
+      </div> -->
     </header>
+    <div class="header-page-section">
+      <div class="header-text-area">
+        <h1>Medical Cannabis & <br />Information Technology</h1>
+        <p class="lead">次世代の主流となる医療用大麻の未来</p>
+        <a class="btn btn-primary" href="#company" role="button"
+          >私たちについて</a
+        >
+      </div>
+    </div>
 
     <!-- About -->
     <section class="company-info bg-light" id="company">
@@ -93,6 +106,9 @@
         <h2 class="company-info-header">
           会社概要
         </h2>
+        <p class="company-info-text lead">
+          私たちは、メディカルツーリズムのハブとしてだけでなく、現在の医学に存在する合併症なしに、痛みや病気に苦しむ患者の治療を支援するためにメディカル大麻をもたらすことを望んでいます。
+        </p>
         <div class="row ">
           <div class="col col-sm-4 text-center">
             <img src="http://khanamonkey.com/images/ico2.png" alt="" />
@@ -107,9 +123,6 @@
             <p>法規制</p>
           </div>
         </div>
-        <p class="company-info-text lead">
-          私たちは、メディカルツーリズムのハブとしてだけでなく、現在の医学に存在する合併症なしに、痛みや病気に苦しむ患者の治療を支援するためにメディカル大麻をもたらすことを望んでいます。
-        </p>
       </div>
     </section>
 
@@ -118,7 +131,7 @@
         <img src="http://khanamonkey.com/images/ico1.png" alt="" />
       </div>
       <h2 class="company-info-header">
-        メンバー
+        KHanamonkeyのメンバー
       </h2>
       <div class="container">
         <div class="row  member-section">
@@ -219,6 +232,42 @@
         <p class="company-info-text lead">
           私たちは、メディカルツーリズムのハブとしてだけでなく、現在の医学に存在する合併症なしに、痛みや病気に苦しむ患者の治療を支援するためにメディカル大麻をもたらすことを望んでいます。
         </p>
+        <!-- FORM -->
+        <form>
+          <div class="form-group">
+            <label for="exampleInputEmail1">Email address</label>
+            <input
+              type="email"
+              class="form-control"
+              id="exampleInputEmail1"
+              aria-describedby="emailHelp"
+              placeholder="Enter email"
+            />
+            <small id="emailHelp" class="form-text text-muted"
+              >We'll never share your email with anyone else.</small
+            >
+          </div>
+          <div class="form-group">
+            <label for="exampleInputPassword1">Password</label>
+            <input
+              type="password"
+              class="form-control"
+              id="exampleInputPassword1"
+              placeholder="Password"
+            />
+          </div>
+          <div class="form-group form-check">
+            <input
+              type="checkbox"
+              class="form-check-input"
+              id="exampleCheck1"
+            />
+            <label class="form-check-label" for="exampleCheck1"
+              >Check me out</label
+            >
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
       </div>
     </section>
 
@@ -239,5 +288,6 @@
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
       crossorigin="anonymous"
     ></script>
+    <script src="js/landing.js"></script>
   </body>
 </html>
